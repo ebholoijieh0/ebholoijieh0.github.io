@@ -14,12 +14,34 @@ header, footer {
     padding: 1em 0;
 }
 
-nav a {
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: #007BFF;
     text-decoration: none;
-    margin: 0 15px;
 }
 
 main {
     padding: 20px;
+}
+
+pre {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+pre code {
+    font-family: "Courier New", Courier, monospace;
 }
