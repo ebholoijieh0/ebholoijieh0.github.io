@@ -12,6 +12,8 @@
         <p>A repository of CVE-2024 vulnerabilities and their demonstrations.</p>
     </header>
     <nav>
+        <!-- Navigation -->
+        <a href="index.html">Home</a> |
         <a href="CVE-2024/example1.html">CVE-2024 Example 1</a> |
         <a href="CVE-2024/example2.html">CVE-2024 Example 2</a>
     </nav>
@@ -19,6 +21,7 @@
         <section>
             <h2>About CVE-2024</h2>
             <p>This site documents vulnerabilities for CVE-2024, providing analysis and example code demonstrations.</p>
+                 <!-- Correctly closed img tag -->
             <img src="images/example_image.jpg" alt="Example Image" style="max-width: 100%; height: auto;" />
         </section>
     </main>
