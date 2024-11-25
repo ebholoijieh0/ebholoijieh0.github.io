@@ -19,6 +19,7 @@
         <section>
             <h2>About CVE-2024</h2>
             <p>This site documents vulnerabilities for CVE-2024, providing analysis and example code demonstrations.</p>
+            <img src="images/example_image.jpg" alt="Example Image" style="max-width: 100%; height: auto;">
         </section>
     </main>
     <footer>
