@@ -21,8 +21,38 @@
             padding: 1em 0;
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a, nav select {
+            color: white;
+            text-decoration: none;
+            background: #555;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        nav a:hover, nav select:hover {
+            background: #666;
+        }
         main {
             padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         pre {
@@ -56,39 +86,5 @@
         }
     </style>
 </head>
-<body>
-<!--
-    <header>
-        <h1>Code Examples with Syntax Highlighting</h1>
-    </header>
-    <main>
-        <h2>Example 1: C Code</h2> -->
-        <pre> 
-<span class="comment">// This is a comment</span>
-<span class="keyword">#include</span> <span class="string">&lt;stdio.h&gt;</span>
 
-<span class="keyword">void</span> <span class="function">helloWorld</span>() {
-    <span class="keyword">printf</span>(<span class="string">"Hello, World!\n"</span>);
-}
-
-<span class="keyword">int</span> <span class="function">main</span>() {
-    <span class="function">helloWorld</span>();
-    <span class="keyword">return</span> 0;
-}
-        </pre>
-
-        <h2>Example 2: PHP Code</h2>
-        <pre>
-<span class="keyword">&lt;?php</span>
-<span class="comment">// This is a PHP comment</span>
-
-<span class="keyword">function</span> <span class="function">greet</span>(<span class="variable">$name</span>) {
-    <span class="keyword">echo</span> <span class="string">"Hello, "</span> . <span class="variable">$name</span> . <span class="string">"!\n"</span>;
-}
-
-<span class="function">greet</span>(<span class="string">"World"</span>);
-<span class="keyword">?&gt;</span>
-        </pre>
-    </main>
-</body>
 </html>
