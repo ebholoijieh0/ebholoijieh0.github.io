@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <title>Code Examples with Colors</title> -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,7 +42,7 @@
         }
         main {
             padding: 20px;
-            text-align: left;
+            text-align: center;
         }
         footer {
             background-color: #222;
@@ -86,21 +85,5 @@
         }
     </style>
 </head>
-<body>
 
-    <main>
-        <pre> 
-<span class="keyword">#include</span> <span class="string">&lt;stdio.h&gt;</span>
-
-<span class="keyword">void</span> <span class="function">helloWorld</span>() {
-    <span class="keyword">printf</span>(<span class="string">"Hello, World!\n"</span>);
-}
-
-<span class="keyword">int</span> <span class="function">main</span>() {
-    <span class="function">helloWorld</span>();
-    <span class="keyword">return</span> 0;
-}
-
-    </main>
-</body>
 </html>
