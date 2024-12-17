@@ -17,13 +17,13 @@
         header {
             background-color: #222;
             color: #fff;
-            text-align: center;
+            text-align: left;
             padding: 1em 0;
         }
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             gap: 20px;
             background-color: #444;
             padding: 10px;
@@ -43,12 +43,12 @@
         }
         main {
             padding: 20px;
-            text-align: center;
+            text-align: left;
         }
         footer {
             background-color: #222;
             color: white;
-            text-align: center;
+            text-align: left;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
@@ -86,5 +86,21 @@
         }
     </style>
 </head>
+<body>
 
+    <main>
+        <pre> 
+<span class="keyword">#include</span> <span class="string">&lt;stdio.h&gt;</span>
+
+<span class="keyword">void</span> <span class="function">helloWorld</span>() {
+    <span class="keyword">printf</span>(<span class="string">"Hello, World!\n"</span>);
+}
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="function">helloWorld</span>();
+    <span class="keyword">return</span> 0;
+}
+
+    </main>
+</body>
 </html>
