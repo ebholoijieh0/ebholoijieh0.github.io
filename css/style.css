@@ -22,7 +22,7 @@
 
         nav {
             display: flex;
-            justify-content: left;
+            justify-content: center;
             gap: 20px;
             background-color: #444;
             padding: 10px;
