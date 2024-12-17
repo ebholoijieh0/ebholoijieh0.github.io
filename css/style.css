@@ -16,13 +16,13 @@
         header {
             background-color: #222;
             color: #fff;
-            text-align: left;
+            text-align: center;
             padding: 1em 0;
         }
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             gap: 20px;
             background-color: #444;
             padding: 10px;
@@ -42,7 +42,7 @@
         }
         main {
             padding: 20px;
-            text-align: center;
+            text-align: left;
         }
         footer {
             background-color: #222;
