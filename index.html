@@ -22,7 +22,13 @@
             color: white;
             padding: 20px 0;
         }
-
+        header img {
+            border-radius: 50%;
+            align-items: right; 
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -52,12 +58,7 @@
         section {
             margin-bottom: 20px;
         }
-        header img {
-            border-radius: 70%;
-            align-items: right;
-            width: 80px;
-            height: 80px;
-        }
+
         /* Styled text section */
         /*
         .styled-text-section {
@@ -72,7 +73,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         */
-             
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
         .social-media {
             display: flex;
             justify-content: center;
@@ -84,6 +91,16 @@
             width: 30px;
             height: 30px;
             border-radius: 5px;
+        }
+        .footer-links {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: underline;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -135,7 +152,7 @@
 
     <footer>
         <p>&copy; 2025 Ebholo Ijieh</p>
-            <div class="social-media">
+        <div class="social-media">
             <a href="https://www.threads.net/@ebholo007" target="_blank">
                 <img src="x-logo.png" alt="Twitter">
             </a>
@@ -145,6 +162,12 @@
             <a href="https://github.com/ebholoijieh0" target="https://github.com/">
                 <img src="github-logo.png" alt="GitHub">
             </a>
+        </div>
+         <div class="footer-links">
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="health-privacy.html">Consumer Health Privacy Policy</a>
+            <a href="cookies.html">Cookies Policy</a>
         </div>
     </footer>
 
