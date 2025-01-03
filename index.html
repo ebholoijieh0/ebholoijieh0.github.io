@@ -6,8 +6,7 @@
     <title>Security-tools-projects-main-page</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/code.css" />
-    <!-- Highlight.js CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css" />
+
     <style>
         /* General reset */
         body {
@@ -140,7 +139,7 @@
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
+        <a href="/">Home</a>
         <select id="toolsDropdown" onchange="navigateTool()">
             <option value="">Select a Tool</option>
             <option value="/checksum">Python Tool - Checksum</option>
@@ -229,7 +228,7 @@
         const path = window.location.pathname;
     
             if (path.endsWith("index.html")) {
-                window.history.replaceState(null, "", "/home");
+                window.history.replaceState(null, "", "/");
             } else if (path.endsWith("CVE-2024/checksum.html")) {
                 window.history.replaceState(null, "", "/checksum");
             } else if (path.endsWith("CVE-2024/example color.html")) {
