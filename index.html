@@ -4,69 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ebholo Ijieh Security Projects</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/code.css" />
     <style>
         /* General reset */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             color: #333;
         }
 
         header {
-            text-align: center;
-            background-color: #004d61;
-            color: white;
-            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
         }
 
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #007b91;
-            padding: 10px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
         }
 
         nav a, nav select {
-            color: white;
+            color: #333;
             text-decoration: none;
             margin: 0 10px;
         }
 
         main {
-            margin: 20px auto;
-            max-width: 800px;
+            min-height: calc(100vh - 160px); /* Ensures scaling to footer */
             padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         section {
-            margin-bottom: 20px;
+            flex-grow: 1;
         }
 
-        /* Styled text section */
-        .styled-text-section {
-            background-color: #354a5f;
-            color: white;
+        /* About Section */
+        .about-section {
+            background-color: #ffffff;
             padding: 40px;
             text-align: center;
-            border-radius: 10px;
             font-size: 1.2rem;
             font-family: 'Georgia', serif;
             line-height: 1.8;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Ebholo Ijieh</h1>
-        <p>Security tool projects</p>
+        <img src="profile_pic.jpg" alt="Profile Image">
     </header>
 
     <nav>
@@ -79,15 +96,11 @@
     </nav>
 
     <main>
-        <section>
+        <section class="about-section">
             <h2>About Security Tools</h2>
-            <p>This site documents security tools, examples, and demonstrations.</p>
-        </section>
-
-        <section>
-            <div class="styled-text-section">
-                This is a text example beautifully styled with a professional look.
-            </div>
+            <p>
+                This site documents security tools, examples, and demonstrations, providing detailed insights into various projects aimed at enhancing cybersecurity measures.
+            </p>
         </section>
     </main>
 
