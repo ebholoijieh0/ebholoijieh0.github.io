@@ -30,6 +30,8 @@
     <script>
         // Update fallback link if mapping exists
         if (redirects[path]) {
+                    // Update fallback link if mapping exists
+            const redirectPath = redirects[currentPath] || "/";
             document.getElementById("redirectLink").href = redirects[path];
         }
     </script>
