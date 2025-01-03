@@ -179,6 +179,16 @@
                 This is a text example beautifully styled with a professional look.
             </div>
         </section> 
+            const path = window.location.pathname;
+     <script>
+            if (path.endsWith("index.html")) {
+                window.history.replaceState(null, "", "/");
+            } else if (path.endsWith("CVE-2024/checksum.html")) {
+                window.history.replaceState(null, "", "/checksum");
+            } else if (path.endsWith("CVE-2024/example color.html")) {
+                window.history.replaceState(null, "", "/crypto");
+            }
+        </script>
     -->
     
     </main>
@@ -225,15 +235,7 @@
                 window.location.href = selectedValue;
             }
         }
-        const path = window.location.pathname;
-    
-            if (path.endsWith("index.html")) {
-                window.history.replaceState(null, "", "/");
-            } else if (path.endsWith("CVE-2024/checksum.html")) {
-                window.history.replaceState(null, "", "/checksum");
-            } else if (path.endsWith("CVE-2024/example color.html")) {
-                window.history.replaceState(null, "", "/crypto");
-            }
+
     </script>
 </body>
 </html>
