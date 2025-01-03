@@ -6,15 +6,7 @@
     <title>Ebholo Ijieh Security Projects</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/code.css" />
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-        tinymce.init({
-            selector: '#richTextEditor',
-            plugins: 'lists link image table code',
-            toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | bullist numlist | link image | code',
-            height: 300
-        });
-    </script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
 </head>
 <body>
     <header>
@@ -39,15 +31,23 @@
 
         <section>
             <h2>Editable Section</h2>
-            <textarea id="richTextEditor">This is a text example</textarea>
+            <textarea id="editor">This is a text example</textarea>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ebholo Ijieh</p>
+        <p>&copy; 2025 Ebholo Ijieh</p>
     </footer>
 
     <script>
+        ClassicEditor.create(document.querySelector('#editor'))
+            .then(editor => {
+                console.log('Editor initialized', editor);
+            })
+            .catch(error => {
+                console.error('There was a problem initializing the editor:', error);
+            });
+
         function navigateTool() {
             const dropdown = document.getElementById('toolsDropdown');
             const selectedValue = dropdown.value;
