@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+        // Define redirection mapping
+        const redirects = {
+            "/CVE-2024/checksum.html": "/checksum",
+            "/CVE-2024/example%20color.html": "/crypto",
+            "/index.html": "/"
+        };
+
+        // Get current path
+        const path = window.location.pathname;
+
+        // Redirect if mapping exists
+        if (redirects[path]) {
+            window.location.replace(redirects[path]);
+        } else {
+            // Optional: Redirect to home if no match
+            window.location.replace("/");
+        }
+    </script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a id="redirectLink" href="/">click here</a>.</p>
+    <script>
+        // Update fallback link if mapping exists
+        if (redirects[path]) {
+            document.getElementById("redirectLink").href = redirects[path];
+        }
+    </script>
+</body>
+</html>
