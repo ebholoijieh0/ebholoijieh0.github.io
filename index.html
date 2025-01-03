@@ -6,8 +6,15 @@
     <title>Ebholo Ijieh Security Projects</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/code.css" />
-    <!-- Highlight.js CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css" />
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#richTextEditor',
+            plugins: 'lists link image table code',
+            toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | bullist numlist | link image | code',
+            height: 300
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -30,7 +37,10 @@
             <p>This site documents security tools, examples, and demonstrations.</p>
         </section>
 
-
+        <section>
+            <h2>Editable Section</h2>
+            <textarea id="richTextEditor">This is a text example</textarea>
+        </section>
     </main>
 
     <footer>
@@ -46,6 +56,5 @@
             }
         }
     </script>
-
 </body>
 </html>
