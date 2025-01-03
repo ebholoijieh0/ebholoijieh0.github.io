@@ -136,13 +136,14 @@
         <h1>CYBERSECURITY BLOG</h1>
         <p>System Security Tools Project</p>
         <img src="images/profile_pic.jpg" alt="Profile Image">
+        
     </header>
 
     <nav>
         <a href="index.html">Home</a>
         <select id="toolsDropdown" onchange="navigateTool()">
             <option value="">Select a Tool</option>
-            <option value="CVE-2024/checksum.html">Python Tool - Checksum</option>
+            <option value="/checksum">Python Tool - Checksum</option>
             <option value="CVE-2024/example color.html">Python Tool - Crypto</option>
         </select>
     </nav>
@@ -225,6 +226,15 @@
                 window.location.href = selectedValue;
             }
         }
+        const path = window.location.pathname;
+    
+            if (path.endsWith("index.html")) {
+                window.history.replaceState(null, "", "/");
+            } else if (path.endsWith("CVE-2024/checksum.html")) {
+                window.history.replaceState(null, "", "/checksum");
+            } else if (path.endsWith("CVE-2024/example color.html")) {
+                window.history.replaceState(null, "", "/crypto");
+            }
     </script>
 </body>
 </html>
